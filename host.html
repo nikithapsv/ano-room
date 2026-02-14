@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Host Panel</title>
+
+<style>
+body {
+  font-family: Poppins;
+  background: #0f2027;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  margin-top: 80px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #ff00cc;
+  color: white;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h2>👑 Host Panel</h2>
+
+<input id="question" placeholder="Type your question">
+<br>
+<button onclick="sendQuestion()">Send Question</button>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function sendQuestion() {
+  const q = document.getElementById("question").value;
+  document.getElementById("msg").innerText =
+    "Question Sent!";
+}
+</script>
+
+</body>
+</html>

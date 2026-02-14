@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anonymous Room</title>
+
+<style>
+body {
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Live Anonymous Q&A</h1>
+
+<button onclick="location.href='host.html'">
+👑 Host
+</button>
+
+<button onclick="location.href='member.html'">
+👥 Member
+</button>
+</div>
+
+</body>
+</html>
